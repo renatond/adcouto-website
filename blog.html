@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Jurídico do Adriano & Couto Advocacia - Artigos, análises e orientações sobre temas jurídicos relevantes">
+    <title>Blog Jurídico - Adriano & Couto Advocacia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="img/logo.webp" alt="Adriano & Couto Advocacia">
+                <div class="navbar-logo-text">
+                    <span class="navbar-logo-title">Adriano & Couto</span>
+                    <span class="navbar-logo-subtitle">Advocacia</span>
+                </div>
+            </a>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Início</a>
+                <a href="o-escritorio.html" class="navbar-link">O Escritório</a>
+                <a href="areas-de-atuacao.html" class="navbar-link">Áreas de Atuação</a>
+                <a href="blog.html" class="navbar-link active">Blog</a>
+                <a href="contato.html" class="navbar-link">Contato</a>
+            </div>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header-title">Blog Jurídico</h1>
+            <p class="page-header-subtitle">
+                Artigos, análises e orientações sobre temas jurídicos relevantes
+            </p>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <div class="blog-filters">
+        <button class="filter-btn active" data-filter="Todos">Todos</button>
+        <button class="filter-btn" data-filter="Recuperação de Crédito">Recuperação de Crédito</button>
+        <button class="filter-btn" data-filter="Direito Empresarial">Direito Empresarial</button>
+        <button class="filter-btn" data-filter="Direito do Consumidor">Direito do Consumidor</button>
+        <button class="filter-btn" data-filter="Direito Bancário">Direito Bancário</button>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-3" id="blogGrid">
+                <!-- Post 1 -->
+                <div class="card blog-card" data-category="Recuperação de Crédito">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop&q=80" alt="Recuperação de Crédito">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Recuperação de Crédito</span>
+                        <h3 class="card-title line-clamp-2">Recuperação de Crédito: Estratégias Eficazes para Empresas</h3>
+                        <p class="card-description line-clamp-3">
+                            Conheça as principais estratégias jurídicas para recuperar créditos de forma eficiente e reduzir a inadimplência na sua empresa.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>15 de Outubro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="card blog-card" data-category="Direito do Consumidor">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=400&fit=crop&q=80" alt="Direitos do Consumidor">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Direito do Consumidor</span>
+                        <h3 class="card-title line-clamp-2">Direitos do Consumidor: O Que Você Precisa Saber</h3>
+                        <p class="card-description line-clamp-3">
+                            Entenda seus direitos como consumidor e saiba quando procurar assistência jurídica para resolver problemas com produtos e serviços.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>10 de Outubro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>4 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="card blog-card" data-category="Direito Empresarial">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop&q=80" alt="Contratos Empresariais">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Direito Empresarial</span>
+                        <h3 class="card-title line-clamp-2">Contratos Empresariais: Cláusulas Essenciais</h3>
+                        <p class="card-description line-clamp-3">
+                            Descubra quais cláusulas são indispensáveis em contratos empresariais e como proteger sua empresa de riscos jurídicos.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>5 de Outubro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>6 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="card blog-card" data-category="Recuperação de Crédito">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&q=80" alt="Inadimplência">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Recuperação de Crédito</span>
+                        <h3 class="card-title line-clamp-2">Inadimplência: Como Prevenir e Agir Legalmente</h3>
+                        <p class="card-description line-clamp-3">
+                            Saiba como sua empresa pode se prevenir contra a inadimplência e quais medidas legais tomar quando ela ocorre.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>1 de Outubro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="card blog-card" data-category="Direito Empresarial">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=400&fit=crop&q=80" alt="Compliance">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Direito Empresarial</span>
+                        <h3 class="card-title line-clamp-2">Compliance Empresarial: A Importância da Conformidade Legal</h3>
+                        <p class="card-description line-clamp-3">
+                            Entenda como a implementação de programas de compliance pode proteger sua empresa de riscos legais e reputacionais.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>25 de Setembro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>7 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="card blog-card" data-category="Direito Bancário">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop&q=80" alt="Contratos Bancários">
+                    </div>
+                    <div class="card-content">
+                        <span class="blog-badge">Direito Bancário</span>
+                        <h3 class="card-title line-clamp-2">Revisão de Contratos Bancários: Quando é Possível?</h3>
+                        <p class="card-description line-clamp-3">
+                            Descubra em quais situações é possível revisar contratos bancários e recuperar valores pagos indevidamente.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar"></i>
+                                <span>20 de Setembro, 2025</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock"></i>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Ler mais <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section section-bg">
+        <div class="container max-w-3xl text-center">
+            <h2 class="section-title mb-4">Receba Nossos Artigos</h2>
+            <p class="text-muted mb-8">
+                Cadastre-se para receber em primeira mão nossos artigos jurídicos e atualizações
+            </p>
+            <form class="flex gap-3 max-w-md mx-auto" style="flex-direction: column;">
+                <input 
+                    type="email" 
+                    placeholder="Seu melhor e-mail" 
+                    class="form-input"
+                    style="margin-bottom: 0;"
+                >
+                <button type="submit" class="btn btn-primary">
+                    Inscrever-se
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <img src="img/logo.webp" alt="Adriano & Couto Advocacia" class="footer-logo">
+                        <h3 style="margin-bottom: 0;">Adriano & Couto Advocacia</h3>
+                    </div>
+                    <p>
+                        Especialistas em recuperação de crédito, inadimplência e contratos. 
+                        Atuação em todas as áreas do Direito Cível.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <div class="footer-list">
+                        <a href="index.html">Início</a>
+                        <a href="o-escritorio.html">O Escritório</a>
+                        <a href="areas-de-atuacao.html">Áreas de Atuação</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contato.html">Contato</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="footer-list">
+                        <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <i data-lucide="map-pin" style="width: 1.25rem; height: 1.25rem; color: hsl(var(--accent)); flex-shrink: 0;"></i>
+                            <span>Avenida Abelardo Bueno nº 1, Sala 308-C, Bloco Ayrton Senna II, Edifício Dimension - Barra da Tijuca, Rio de Janeiro/RJ</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-lucide="phone" style="width: 1.25rem; height: 1.25rem; color: hsl(var(--accent));"></i>
+                            <span>(21) 3349-4608</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-lucide="mail" style="width: 1.25rem; height: 1.25rem; color: hsl(var(--accent));"></i>
+                            <span>contato@adrianoecoutoadv.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adriano & Couto Advocacia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        
+        // Navbar toggle
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+        
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.remove('active');
+            });
+        });
+        
+        // Blog filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter posts
+                blogCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'Todos' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
